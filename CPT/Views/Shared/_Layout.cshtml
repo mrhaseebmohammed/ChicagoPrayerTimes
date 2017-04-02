@@ -1,0 +1,79 @@
+﻿<html>
+<head>
+    <title>
+        Chicago Prayer Times
+    </title>
+    <link rel="stylesheet" type="text/css" href="~/Content/bootstrap.css">
+    <style>
+.offset
+{
+	margin-top:15px;
+}
+
+@@font-face {
+  font-family: 'digital-7';
+  src: url('../../Content/digital-7.ttf')  format('truetype')
+}
+
+body{
+  font-size: 2vh;
+}
+
+.digital {
+  font-family: 'digital-7', Fallback, sans-serif;
+  font-weight: 700;
+  font-size: 3vh;
+}
+
+th{
+background-color: #B4DFE5;
+}
+
+.odd{
+background-color: #97CA2D;
+}
+
+.even{
+background-color: #4BB5C2;
+}
+
+.white-text{
+color: #ffffff;
+font-weight: bold;
+font-family: sans-serif;
+}
+
+.black-text{
+color: #000000
+}
+
+p{
+font-size:1.5vh;}
+
+    </style>
+    <script src="https://code.jquery.com/jquery-3.2.1.js"
+            integrity="sha256-DZAnKJ/6XZ9si04Hgrsxu/8s717jcIzLy3oi35EouyE="
+            crossorigin="anonymous"></script>
+</head>
+<body>
+    <div class="container">
+        <h1>Chicago Prayer Times</h1>
+        <table class="table table-striped table-hover offset">
+            <thead>
+                <tr>
+                    <th>Masjid</th>
+                    <th>Fajr</th>
+                    <th>Zuhr</th>
+                    <th>Asr</th>
+                    <th>Maghrib</th>
+                    <th>Isha</th>
+                    <th>Jumuah</th>
+                </tr>
+            </thead>
+            <tbody>
+                @RenderBody()
+            </tbody>
+        </table>
+    </div>
+</body>
+</html>

@@ -1,0 +1,15 @@
+﻿@model List<CPT.Models.CPTViewModel>
+
+@foreach (var item in Model)
+{
+    <tr>
+        <td class="white-text">@item.Name<p class="black-text">@item.Address</p></td>
+        <td class="digital black-text">@item.Fajr</td>
+        <td class="digital black-text">@item.Zuhr</td>
+        <td class="digital black-text">@item.Asr</td>
+        <td class="digital black-text">@item.Maghrib</td>
+        <td class="digital black-text">@item.Isha</td>
+        <td class="digital black-text">@item.Jummah</td>
+    </tr>
+
+}
